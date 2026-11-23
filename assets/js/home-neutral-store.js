@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!content || !footer) return;
 
   const storeUrl = '#';
-  const imagePath = 'assets/images/home-store/';
+  const imagePath = '/assets/images/home-store/';
 
   const homeOrganization = [
     ['normal-kit-organizacao-branco.webp', 'Kit Organização Branco', 'Etiquetas versáteis para organizar mantimentos, armários e escritório.', 'De R$ 42,90', '3x R$ 14,30', '6 reviews', 'kit-organizacao-branco'],
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
   footer.innerHTML = `
     <div class="store-benefits store-benefits--footer"><div class="store-shell store-benefits__track">${[['✓','Frete Grátis','acima de R$150*'],['✓','Compra Segura','Site protegido'],['3x','Pague em até 3x','sem juros em todo site*'],['★','Qualidade Garantida','15+ anos de qualidade']].map(item => `<article class="store-benefit"><span class="store-benefit__icon">${item[0]}</span><span><strong>${item[1]}</strong><small>${item[2]}</small></span></article>`).join('')}</div></div>
     <div class="store-shell store-footer__grid">
-      <div><img class="store-footer__logo" src="assets/images/logo-2-white.png" alt="Grudado em Você"><p>A solução para identificação e organização. Produtos feitos à mão e embalados com carinho.</p><div class="store-footer__social"><a href="#">Instagram</a><a href="#">Facebook</a></div></div>
+      <div><img class="store-footer__logo" src="/assets/images/logo-2-white.png" alt="Grudado em Você"><p>A solução para identificação e organização. Produtos feitos à mão e embalados com carinho.</p><div class="store-footer__social"><a href="#">Instagram</a><a href="#">Facebook</a></div></div>
       <nav aria-label="Ajuda"><h2>Ajuda</h2><a href="#">Perguntas Frequentes</a><a href="#">Blog</a><a href="#">Quem Somos</a><a href="#">Política de Privacidade e Cookies</a><a href="#">Programa de Afiliados</a></nav>
       <div><h2>Fale conosco</h2><p>Atendimento de:<br><strong>Segunda à Sexta-feira<br>Das 09:00h às 18:00h</strong></p><p>E-mail:<br><a href="#">contato@grudadoemvoce.com.br</a></p><p>Telefones:<br>(21) 2018-2074 ou (11) 3181-6202</p></div>
       <form class="store-newsletter" onsubmit="return false"><h2>Novidades</h2><p>Inscreva-se em nossa newsletter para receber ofertas exclusivas.</p><label for="newsletter-email">E-mail</label><div><input id="newsletter-email" type="email" placeholder="Seu e-mail"><button type="submit">Assinar</button></div></form>
